@@ -3,14 +3,17 @@
 /**
  * _puts - prints a string, followed by a new line, to stdout.
  * @str: function parameter
+ * Return: the length of the string
  */
+
 void _puts(char *str)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
+	int i = 0;
+	
+	while (str[i] != '\0');
 	{
 		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
